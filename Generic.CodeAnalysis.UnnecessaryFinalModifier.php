@@ -21,4 +21,11 @@ final class SomeClass3
     }
 }
 
+final class SomeClass4
+{
+    public final function SomeMethod()
+    {
+    }
+}
+
 ?>
