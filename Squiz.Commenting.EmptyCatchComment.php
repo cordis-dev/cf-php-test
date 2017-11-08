@@ -14,6 +14,7 @@ class SomeClass
   }
 }
 
+
 class SomeClass2
 {
   public function saveFile($filename)
