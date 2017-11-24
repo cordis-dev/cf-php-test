@@ -8,5 +8,6 @@
   
   <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
   <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+  <rule ref="/home/username/standards/custom.xml"/>
   
 </ruleset>
