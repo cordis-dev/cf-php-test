@@ -6,7 +6,6 @@
     <type>error</type>
   </rule>
 
-  <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
   <rule ref="Squiz.Commenting.EmptyCatchComment"/>
   
 </ruleset>
