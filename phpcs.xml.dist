@@ -1,13 +1,64 @@
 <?xml version="1.0"?>
 <ruleset name="PHP_CodeSniffer">
 
+  <arg name="tab-width" value="4"/>
+  
   <!-- Don't hide tokenizer exceptions -->
   <rule ref="Internal.Tokenizer.Exception">
     <type>error</type>
   </rule>
-  
+
+  <rule ref="PEAR.WhiteSpace.ScopeIndent">
+    <properties>
+        <property name="exact" value="true" />
+        <property name="tabIndent" value="true" />
+        <property name="ignoreIndentationTokens" type="array"
+            value="T_COMMENT,T_DOC_COMMENT_OPEN_TAG"/>
+    </properties>
+  </rule>
+
+  <rule ref="Generic.PHP.DeprecatedFunctions"/>
+  <rule ref="Generic.Commenting.Todo"/>
+  <rule ref="Generic.Commenting.Fixme"/>
+  <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
   <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
-  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
-  <rule ref="/home/username/standards/custom.xml"/>
+  <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+  <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+  <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+  <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+  <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+  <rule ref="Generic.PHP.LowerCaseKeyword"/>
+  <rule ref="PSR2.ControlStructures.ControlStructureSpacing"/>
   
+<rule ref="Generic.Files.LineLength">
+    <properties>
+        <property name="lineLimit" value="50" />
+        <property name="absoluteLineLimit" value="50" />
+    </properties>
+</rule>  
+
+  <!-- https://github.com/squizlabs/PHP_CodeSniffer/pull/1725 -->
+  <rule ref="Generic.CodeAnalysis.AssignmentInCondition"/>
+
+  <rule ref="Generic.Strings.UnnecessaryStringConcat">
+    <properties>
+      <property name="allowMultiline" value="true" />
+      <property name="error" value="false" />
+    </properties>
+  </rule>
+
+  <rule ref="Generic.PHP.BacktickOperator">
+    <type>error</type>
+  </rule>
+
+  <rule ref="MySource.PHP.EvalObjectFactory">
+    <type>error</type>
+  </rule>
+  <rule ref="Squiz.PHP.Eval">
+    <type>error</type>
+  </rule>
+  <rule ref="Squiz.PHP.NonExecutableCode"/>
+  <rule ref="Squiz.Scope.StaticThisUsage"/>
+  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+
 </ruleset>
