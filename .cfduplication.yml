@@ -1,0 +1,8 @@
+# duplication threshold
+MinLineCount: 11
+
+# files/patterns to exclude
+IgnorePatterns:
+  - file_name.css
+  - src\file_name.js
+  - extra\**
