@@ -2,7 +2,7 @@
 MinLineCount: 11
 
 # files/patterns to exclude
-IgnorePatterns:
+IgnorePatterns
   - file_name.css
   - src\file_name.js
   - extra\**
