@@ -1,4 +1,4 @@
-# duplication threshold
+# duplication threshold [10 - 100]
 MinLineCount: 110
 
 # files/patterns to exclude
