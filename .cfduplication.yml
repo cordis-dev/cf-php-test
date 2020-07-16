@@ -1,8 +1,5 @@
 # duplication threshold [10 - 100]
-MinLineCount: 110
+MinLineCount: 44
 
 # files/patterns to exclude
 IgnorePatterns:
-  - file_name.css
-  - src\file_name.js
-  - extra\**
