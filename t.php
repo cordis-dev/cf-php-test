@@ -32,6 +32,35 @@ public function saveFile($filename)
 for ($i = 0; $i < 10; $i++) {
     for ($j = 0; $j < 10; $i++) {
 		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+    }
+}
+
+// $i is used in both loops
+for ($i = 0; $i < 10; $i++) {
+    for ($j = 0; $j < 10; $i++) {
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
+		do_something($i, $j);
     }
 }
 ?>
